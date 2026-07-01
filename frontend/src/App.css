@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.error-banner {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Language selection */
+.language-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.language-section select {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 200px;
+}
+
+.language-section button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.language-section button:hover {
+    background: #5a67d8;
+}
+
+/* Recording section */
+.recording-section {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.recording-section h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.recording-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.controls button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-start {
+    background: #28a745;
+    color: white;
+}
+
+.btn-start:hover:not(:disabled) {
+    background: #218838;
+}
+
+.btn-stop {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-stop:hover:not(:disabled) {
+    background: #c82333;
+}
+
+.btn-play {
+    background: #ffc107;
+    color: #333;
+}
+
+.btn-play:hover:not(:disabled) {
+    background: #e0a800;
+}
+
+.btn-submit {
+    background: #667eea;
+    color: white;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: #5a67d8;
+}
+
+/* Timer */
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+}
+
+/* Status messages */
+.status {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #e7f3ff;
+    color: #004085;
+    border: 1px solid #b8daff;
+}
+
+/* Processing section */
+.processing {
+    text-align: center;
+    padding: 20px;
+    background: #fff3cd;
+    border-radius: 10px;
+    border: 1px solid #ffc107;
+}
+
+.processing h2 {
+    color: #856404;
+}
+
+.processing p {
+    color: #856404;
+}
+
+/* Download section */
+.download-section {
+    text-align: center;
+    padding: 20px;
+    background: #e8f5e9;
+    border-radius: 10px;
+    border: 1px solid #a5d6a7;
+}
+
+.download-section h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.download-section p {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.download-section button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-download {
+    background: #28a745;
+    color: white;
+}
+
+.btn-download:hover {
+    background: #218838;
+}
+
+.btn-done {
+    background: #667eea;
+    color: white;
+}
+
+.btn-done:hover {
+    background: #5a67d8;
+}
